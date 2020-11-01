@@ -52,6 +52,9 @@ sigma.parsers.json('data/manuallayout.json', s,
             node.bwidth = 2.0
           } else {
             node.bcolor = "#000"
+            if (node.prime) { 
+                node.bcolor = "#0CC"
+            }
             node.bwidth = 5.0
           }
 /*
