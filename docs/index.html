@@ -9,21 +9,21 @@
 
 ol {
   list-style: none;
-  counter-reset: my-awesome-counter;
+  counter-reset: exploration;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 ol li {
-  counter-increment: my-awesome-counter;
+  counter-increment: exploration;
   display: flex;
-  width: 25%;
+  width: 33%;
   font-size: 0.8rem;
   margin-bottom: 0.5rem;
 }
 ol li::before {
-  content: "0" counter(my-awesome-counter);
+  content: "00" counter(exploration);
   font-weight: bold;
   font-size: 3rem;
   margin-right: 0.5rem;
@@ -44,8 +44,8 @@ body {
 <body>
 <h1>Explorations</h1>
 <ol>
-<li><a href="001_hailstones/">Hailstones</a>: The most beguiling unsolved math problem.</li>
-<li><a href="002_steinerchains/">Steiner Chains</a>: Circles of circles spinning in circles.</li>
+<li><p><a href="001_hailstones/">Hailstones</a>: The most beguiling unsolved math problem.</p></li>
+<li><p><a href="002_steinerchains/">Steiner Chains</a>: Circles of circles spinning in circles.</p></li>
 </ol>
 </body>
 </html>
