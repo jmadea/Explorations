@@ -30,7 +30,12 @@ ol li::before {
   font-family: 'Abril Fatface', serif;
   line-height: 1;
 }
-
+li:nth-child(n+10):before {
+  content: "0" counter(exploration);
+}
+li:nth-child(n+100):before {
+  content: counter(exploration);
+}
 
 
 body {
