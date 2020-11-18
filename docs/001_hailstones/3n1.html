@@ -39,20 +39,38 @@ sigma.parsers.json('data/manuallayout.json', s,
           let r2 = Number(node.id) % 2
           let r3 = Number(node.id) % 3
 
-          if (r3 == 0) { 
-            node.color = "#F0F"
-          } else if (r3 == 1) {
-            node.color = "#F00"
-          } else if (r3 == 2) {
+          if (r2 == 0 && r3 == 0) { 
+            node.color = "#FCF"
+          } else if (r2 == 0 && r3 == 1) {
             node.color = "#00F"
+          } else if (r2 == 0 && r3 == 2) { 
+            node.color = "#CCF"
+          } else if (r3 == 0) { 
+            node.color = "#F0F"
+          } else if (r3 == 1) { 
+            node.color = "#FF0"
+          } else if (r3 == 2) { 
+            node.color = "#F00"
           }
+/*
+          if (r2 == 0) { 
+            node.color = "#CCC"
+          } else { 
+            if (r3 == 0) { 
+              node.color = "#F0F"
+            } else if (r3 == 1) {
+              node.color = "#F00"
+            } else if (r3 == 2) {
+              node.color = "#00F"
+            }
+          } */
 
           if (r2 == 0) {
             node.bcolor = "#FFF"
             node.bwidth = 2.0
           } else {
             node.bcolor = "#000"
-            if (node.prime) { 
+            if (node.prime == true) { 
                 node.bcolor = "#0CC"
             }
             node.bwidth = 5.0
